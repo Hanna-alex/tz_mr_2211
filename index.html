@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Promotions page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" defer></script>
+    <script
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+      defer
+    ></script>
+
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="promotion">
+      <div class="container">
+        <div class="promotion__wrapper">
+          <div class="promotion__img">
+            <img src="img/dental_hygiene.webp" alt="Фото: гигиена зубов" />
+          </div>
+          <!-- /.promotion__img -->
+
+          <div class="promotion__info info">
+            <h3 class="info__subtitle">Акция</h3>
+            <h1 class="info__title">
+              Профессиональная гигиена зубов + отбеливание системой Opalescence
+              всего за&nbsp;<strong class="info__title--b"
+                >9900&nbsp;руб.</strong
+              >
+            </h1>
+            <p class="info__validity">
+              Срок действия акции с&nbsp;<b>01.12.2013</b>&nbsp;г.
+              до&nbsp;<b>01.01.2014</b>&nbsp;г.
+            </p>
+            <div class="info__slogan slogan">
+              <div class="slogan__wrapper">
+                <span class="slogan__text"
+                  >Сделайте свою улыбку неотразимой и&nbsp;привлекательной</span
+                >
+              </div>
+              <!-- /.slogan__wrapper -->
+              <div class="slogan__triangle"></div>
+              <!-- /.triangle -->
+            </div>
+            <!-- /.info__slogan slogan -->
+          </div>
+          <!-- /.promotion__info info -->
+          <div class="promotion__form form-block">
+            <div class="form-block__title-wrapper">
+              <h3 class="form-block__title">Участвовать в акции</h3>
+            </div>
+            <!-- /.form__title-wrapper -->
+            <form action="#" class="promotion__form form">
+              <p class="form__text">
+                Для того чтобы принять участие в&nbsp;акции позвоните нам:
+                <a href="tel:+(812) 123-45-67" class="form__link"
+                  ><b>(812) 123-45-67</b></a
+                >
+                или оставьте ваш телефон:
+              </p>
+              <div class="form__item">
+                <input
+                  id="userName"
+                  name="name"
+                  type="text"
+                  class="form__input"
+                  placeholder="Иван Пертов"
+                  required
+                />
+                <label for="userName" class="form__placeholder"
+                  >Имя Фамилия</label
+                >
+              </div>
+              <!-- /.form__item -->
+
+              <div class="form__item">
+                <input
+                  id="userPhone"
+                  type="tel"
+                  name="phone"
+                  class="form__input phone"
+                  placeholder="+7 (000) 000 - 00 - 00"
+                  required
+                />
+                <label for="userPhone" class="form__placeholder"
+                  >Контактный телефон</label
+                >
+              </div>
+              <!-- /.form__item -->
+              <button class="form__btn" type="submit">Отправить заявку</button>
+            </form>
+          </div>
+          <!-- /.promotion__form -->
+        </div>
+        <!-- /.promotion__wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+
+    <section class="advantage">
+      <div class="container">
+        <div class="advantage__wrapper">
+          <div class="advantage__card" draggable="true" data-item="1">
+            <h2 class="advantage__title">Преимущества Opalescence:</h2>
+            <ul class="advantage__list list-dot">
+              <li class="list-dot__item">Безопасность.</li>
+              <li class="list-dot__item">
+                Нейтральный рН геля не изменяет структуру зуба.
+              </li>
+              <li class="list-dot__item">
+                Вода в составе геля не допускает обезвоживания зуба.
+              </li>
+              <li class="list-dot__item">Защита десен.</li>
+              <li class="list-dot__item">
+                Содержание фторидов уменьшает риск возникновения кариеса.
+              </li>
+              <li class="list-dot__item">Быстрый и стойкий результат.</li>
+            </ul>
+            <div class="advabtage__specialists specialists">
+              <h2 class="advantage__title">Наши специалисты</h2>
+              <div class="specialists__wrapper slider">
+                <div class="slider__item">
+                  <figure class="slider__content">
+                    <div class="slider__img">
+                      <img
+                        src="img/specialists/01.jpg"
+                        alt="Фото специалиста"
+                      />
+                    </div>
+                    <!-- /.slider__img -->
+                    <figcaption class="slider__text">
+                      Иванов Иван Иванович
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- /.slider__item -->
+                <div class="slider__item">
+                  <figure class="slider__content">
+                    <div class="slider__img">
+                      <img
+                        src="img/specialists/02.jpg"
+                        alt="Фото специалиста"
+                      />
+                    </div>
+                    <!-- /.slider__img -->
+                    <figcaption class="slider__text">
+                      Петров Петр Петрович
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- /.slider__item -->
+                <div class="slider__item">
+                  <figure class="slider__content">
+                    <div class="slider__img">
+                      <img
+                        src="img/specialists/02.jpg"
+                        alt="Фото специалиста"
+                      />
+                    </div>
+                    <!-- /.slider__img -->
+                    <figcaption class="slider__text">
+                      Петров Петр Петрович
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- /.slider__item -->
+                <div class="slider__item">
+                  <figure class="slider__content">
+                    <div class="slider__img">
+                      <img
+                        src="img/specialists/01.jpg"
+                        alt="Фото специалиста"
+                      />
+                    </div>
+                    <!-- /.slider__img -->
+                    <figcaption class="slider__text">
+                      Иванов Иван Иванович
+                    </figcaption>
+                  </figure>
+                </div>
+                <!-- /.slider__item -->
+              </div>
+              <!-- /.specialists__wrapper -->
+            </div>
+            <!-- /.advabtage__specialists -->
+          </div>
+          <!-- /.advantage__card card -->
+
+          <div class="advantage__card" draggable="true" data-item="2">
+            <h2 class="advantage__title">В стоимость входит</h2>
+            <ul class="advantage__list list-bg">
+              <li class="list-bg__item">профессиональная чистка зубов</li>
+              <li class="list-bg__item">
+                отбеливание зубов системой Opalescence
+              </li>
+            </ul>
+            <div class="advabtage__reviews reviews">
+              <div class="reviews__wrapper">
+                <h2 class="advantage__title">Отзывы о чистке зубов</h2>
+
+                <a href="#" class="reviews__link"
+                  >Сегодня была в вашей клинике, мне провели процедуру по снятию
+                  зубных отложений</a
+                >
+                <a href="#" class="reviews__link"
+                  >В субботу была на чистке зубов (камни, налет)</a
+                >
+              </div>
+              <!-- /.specialists__wrapper -->
+            </div>
+            <!-- /.advabtage__specialists -->
+          </div>
+          <!-- /.advantage__card card -->
+
+          <div class="advantage__card" draggable="true" data-item="3">
+            <h2 class="advantage__title">Наши преимущества</h2>
+            <ul class="advantage__list list-icon">
+              <li class="list-icon__item">
+                Гарантированное получение помощи при острой боли в день боли в
+                день обращения
+              </li>
+              <li class="list-icon__item">
+                Гарантия на все виды стоматологических услуг
+              </li>
+              <li class="list-icon__item">Обслуживание по ДМС</li>
+            </ul>
+          </div>
+          <!-- /.advantage__card card -->
+        </div>
+        <!-- /.advantage__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+  </body>
+</html>

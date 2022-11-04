@@ -1,0 +1,90 @@
+@media screen and (max-width: 1220px)
+  .container
+    max-width: 960px
+  .promotion
+    &__img
+      height: 261px
+  .info
+    max-width: 370px
+
+  .slogan
+    &__wrapper
+      max-width: 320px
+
+  .form-block
+    max-width: 300px
+
+@media screen and (max-width: 991px)
+  .container
+    max-width: 700px
+
+  .promotion
+    &__wrapper
+      flex-wrap: wrap
+    &__img
+      height: 244px
+      margin-bottom: 2rem
+
+  .info
+    max-width: 430px
+    margin-bottom: 2rem
+
+  .slogan
+    &__wrapper
+      max-width: 100%
+      width: 100%
+      text-align: center
+    &__triangle
+      display: none
+      top: 99%
+      border-left: 25px solid transparent
+      border-right: 25px solid transparent
+      border-top: 26px solid $color-contrast
+      animation: 3s bottom linear
+      animation-iteration-count: infinite
+
+  .form-block
+    max-width: 96%
+    margin: 0 auto
+
+  .form
+    &__text
+      max-width: 100%
+    &__item
+      max-width: 100%
+      margin-bottom: 1.3rem
+    &__btn
+      max-width: 100%
+
+@media screen and (max-width: 767px)
+  .container
+    max-width: 96%
+
+  .promotion
+    padding-top: 15px
+    padding-bottom: 30px
+    &__wrapper
+      flex-direction: column
+    &__img
+      width: 96%
+      height: 410px
+      margin: 0 auto 30px auto
+
+  .info
+    max-width: 96%
+    order: -1
+    margin-bottom: 40px
+    &__subtitle
+      font-size: 32px
+      margin-bottom: 12px
+    &__title
+      font-size: 28px
+      line-height: auto
+      margin-bottom: 20px
+      &--b
+        font-size: 38px
+    &__validity
+      margin-bottom: 40px
+
+  .form-block
+    max-width: 100%
